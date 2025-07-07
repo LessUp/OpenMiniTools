@@ -1,5 +1,5 @@
 #!/bin/bash
-# Creates a new bash script with a basic template and execute permissions.
+# 创建一个新的bash脚本文件，包含基础模板和执行权限
 
 SCRIPT_NAME=$1
 
@@ -32,3 +32,7 @@ EOL
 chmod +x "$SCRIPT_NAME"
 
 echo "Successfully created and made '$SCRIPT_NAME' executable."
+
+# 使用示例：
+#   ./mkscript.sh new_script.sh
+#   这将创建一个名为new_script.sh的可执行文件

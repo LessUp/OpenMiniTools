@@ -6,7 +6,7 @@
 
 ## ✨ 亮点功能
 
-- **Git-Proxy (安全代理)**: 为私有 Git 服务器（如公司 GitLab）设置安全、隔离的代理，无需改动全局 Git 配置，不影响访问 GitHub 等公共服务。详见 `04-Git-Proxy` 目录。
+- **Git-Proxy (安全代理)**: 为私有 Git 服务器（如公司 GitLab）设置安全、隔离的代理，无需改动全局 Git 配置，不影响访问 GitHub 等公共服务。详见 `git-proxy` 目录。
 
 - **SSH 交互式连接**: 提供支持 `fzf` 模糊搜索的菜单，快速连接到常用 SSH 主机。详见 `02-SSH` 目录。
 
@@ -28,7 +28,7 @@
 - **`01-Docs`**: 项目的核心文档，包括使用指南和路线图。
 - **`02-SSH`**: SSH 相关工具。
 - **`03-Git`**: 增强 Git 工作流的脚本。
-- **`04-Git-Proxy`**: 用于为私有 Git 服务器设置代理的模板。
+- **`git-proxy`**: 用于为私有 Git 服务器设置代理的模板。
 - **`05-Docker`**: Docker 相关辅助脚本。
 - **`06-WSL`**: 用于管理 Windows Subsystem for Linux (WSL) 的工具。
 - **`07-Dev`**: 通用开发者工具。
@@ -55,7 +55,7 @@ Welcome to MiniTools, a curated collection of scripts and tools designed to simp
 
 ## ✨ Highlights
 
-- **Git-Proxy (Secure Proxy)**: Set up a secure, isolated proxy for your private Git server (e.g., company GitLab) without changing your global Git config or affecting access to public services like GitHub. See the `04-Git-Proxy` directory.
+- **Git-Proxy (Secure Proxy)**: Set up a secure, isolated proxy for your private Git server (e.g., company GitLab) without changing your global Git config or affecting access to public services like GitHub. See the `git-proxy` directory.
 
 - **Interactive SSH Connection**: Provides a menu with `fzf` fuzzy search support for quickly connecting to frequently used SSH hosts. See the `02-SSH` directory.
 
@@ -77,7 +77,7 @@ Welcome to MiniTools, a curated collection of scripts and tools designed to simp
 - **`01-Docs`**: Core documentation, including usage guide and roadmap.
 - **`02-SSH`**: SSH-related tools.
 - **`03-Git`**: Scripts to enhance Git workflow.
-- **`04-Git-Proxy`**: Templates for setting up a proxy for private Git servers.
+- **`git-proxy`**: Templates for setting up a proxy for private Git servers.
 - **`05-Docker`**: Docker helper scripts.
 - **`06-WSL`**: Tools for managing Windows Subsystem for Linux (WSL).
 - **`07-Dev`**: General developer tools.
