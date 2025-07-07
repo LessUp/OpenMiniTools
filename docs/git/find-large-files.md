@@ -28,7 +28,7 @@ Git 的设计机制决定了每一次提交都是永久性的。如果您不小�
 ### Windows (PowerShell)
 
 ```powershell
-f:\Deving\MiniTools\GitTools\win\find-large-files.ps1
+f:\Deving\OpenMiniTools\GitTools\win\find-large-files.ps1
 ```
 
 ### Unix/Linux/macOS (Bash)
@@ -36,11 +36,11 @@ f:\Deving\MiniTools\GitTools\win\find-large-files.ps1
 首次使用请确保脚本有执行权限：
 
 ```bash
-chmod +x f:/Deving/MiniTools/GitTools/unix/find-large-files.sh
+chmod +x f:/Deving/OpenMiniTools/GitTools/unix/find-large-files.sh
 ```
 
 然后运行脚本：
 
 ```bash
-f:/Deving/MiniTools/GitTools/unix/find-large-files.sh
+f:/Deving/OpenMiniTools/GitTools/unix/find-large-files.sh
 ```

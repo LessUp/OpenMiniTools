@@ -1,4 +1,4 @@
-# MiniTools - 开发常用脚本合集
+# OpenMiniTools - 开发常用脚本合集
 
 ![许可证: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![代码风格: 标准](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)
 
@@ -16,7 +16,7 @@
 
 1.  **克隆仓库**:
     ```bash
-    git clone https://github.com/LessUp/MiniTools.git
+    git clone https://github.com/LessUp/OpenMiniTools.git
     ```
 2.  **浏览目录**: 探索感兴趣的目录，查找所需脚本
 3.  **阅读文档**:
@@ -49,9 +49,9 @@
 
 ---
 
-# MiniTools - A Curated Collection of Developer Scripts (English Version)
+# OpenMiniTools - A Curated Collection of Developer Scripts (English Version)
 
-Welcome to MiniTools, a curated collection of scripts and tools designed to simplify common development and system administration tasks.
+Welcome to OpenMiniTools, a curated collection of scripts and tools designed to simplify common development and system administration tasks.
 
 ## ✨ Highlights
 
@@ -65,7 +65,7 @@ Welcome to MiniTools, a curated collection of scripts and tools designed to simp
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/LessUp/MiniTools.git
+    git clone https://github.com/LessUp/OpenMiniTools.git
     ```
 2.  **Browse the directories** to find scripts you need.
 3.  **Read the documentation**:

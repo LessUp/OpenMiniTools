@@ -24,7 +24,7 @@
 ### Windows (PowerShell)
 
 ```powershell
-f:\Deving\MiniTools\GitTools\win\cleanup-branches.ps1
+f:\Deving\OpenMiniTools\GitTools\win\cleanup-branches.ps1
 ```
 
 ### Unix/Linux/macOS (Bash)
@@ -32,13 +32,13 @@ f:\Deving\MiniTools\GitTools\win\cleanup-branches.ps1
 首次使用请确保脚本有执行权限：
 
 ```bash
-chmod +x f:/Deving/MiniTools/GitTools/unix/cleanup-branches.sh
+chmod +x f:/Deving/OpenMiniTools/GitTools/unix/cleanup-branches.sh
 ```
 
 然后运行脚本：
 
 ```bash
-f:/Deving/MiniTools/GitTools/unix/cleanup-branches.sh
+f:/Deving/OpenMiniTools/GitTools/unix/cleanup-branches.sh
 ```
 
 脚本会列出所有可被安全删除的分支，并等待您的 `y/n` 确认。

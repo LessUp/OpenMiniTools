@@ -45,7 +45,7 @@ git commit -m "fix: correct calculation error in payment module"
 ### Windows (PowerShell)
 
 ```powershell
-f:\Deving\MiniTools\GitTools\win\generate-changelog.ps1
+f:\Deving\OpenMiniTools\GitTools\win\generate-changelog.ps1
 ```
 
 ### Unix/Linux/macOS (Bash)
@@ -53,13 +53,13 @@ f:\Deving\MiniTools\GitTools\win\generate-changelog.ps1
 首次使用请确保脚本有执行权限：
 
 ```bash
-chmod +x f:/Deving/MiniTools/GitTools/unix/generate-changelog.sh
+chmod +x f:/Deving/OpenMiniTools/GitTools/unix/generate-changelog.sh
 ```
 
 然后运行脚本：
 
 ```bash
-f:/Deving/MiniTools/GitTools/unix/generate-changelog.sh
+f:/Deving/OpenMiniTools/GitTools/unix/generate-changelog.sh
 ```
 
 脚本运行后，会在项目根目录生成一个 `CHANGELOG_new.md` 文件。

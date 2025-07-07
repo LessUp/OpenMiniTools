@@ -17,7 +17,7 @@
 ### Windows (PowerShell)
 
 ```powershell
-f:\Deving\MiniTools\GitTools\win\get-repo-summary.ps1
+f:\Deving\OpenMiniTools\GitTools\win\get-repo-summary.ps1
 ```
 
 ### Unix/Linux/macOS (Bash)
@@ -25,13 +25,13 @@ f:\Deving\MiniTools\GitTools\win\get-repo-summary.ps1
 首次使用请确保脚本有执行权限：
 
 ```bash
-chmod +x f:/Deving/MiniTools/GitTools/unix/get-repo-summary.sh
+chmod +x f:/Deving/OpenMiniTools/GitTools/unix/get-repo-summary.sh
 ```
 
 然后运行脚本：
 
 ```bash
-f:/Deving/MiniTools/GitTools/unix/get-repo-summary.sh
+f:/Deving/OpenMiniTools/GitTools/unix/get-repo-summary.sh
 ```
 
 ## 输出示例
@@ -39,7 +39,7 @@ f:/Deving/MiniTools/GitTools/unix/get-repo-summary.sh
 运行后，您将看到类似下面的报告：
 
 ```
---- Git 仓库摘要: MiniTools ---
+--- Git 仓库摘要: OpenMiniTools ---
 
 [+] 贡献者统计 (按提交次数排序):
   - Cascade-AI              : 15 提交

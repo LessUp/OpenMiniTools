@@ -29,12 +29,12 @@
 
 默认分析最近 500 次提交：
 ```powershell
-f:\Deving\MiniTools\GitTools\win\find-hot-files.ps1
+f:\Deving\OpenMiniTools\GitTools\win\find-hot-files.ps1
 ```
 
 指定分析最近 1000 次提交：
 ```powershell
-f:\Deving\MiniTools\GitTools\win\find-hot-files.ps1 -CommitLimit 1000
+f:\Deving\OpenMiniTools\GitTools\win\find-hot-files.ps1 -CommitLimit 1000
 ```
 
 ### Unix/Linux/macOS (Bash)
@@ -42,15 +42,15 @@ f:\Deving\MiniTools\GitTools\win\find-hot-files.ps1 -CommitLimit 1000
 首次使用请确保脚本有执行权限：
 
 ```bash
-chmod +x f:/Deving/MiniTools/GitTools/unix/find-hot-files.sh
+chmod +x f:/Deving/OpenMiniTools/GitTools/unix/find-hot-files.sh
 ```
 
 默认分析最近 500 次提交：
 ```bash
-f:/Deving/MiniTools/GitTools/unix/find-hot-files.sh
+f:/Deving/OpenMiniTools/GitTools/unix/find-hot-files.sh
 ```
 
 指定分析最近 1000 次提交：
 ```bash
-f:/Deving/MiniTools/GitTools/unix/find-hot-files.sh 1000
+f:/Deving/OpenMiniTools/GitTools/unix/find-hot-files.sh 1000
 ```

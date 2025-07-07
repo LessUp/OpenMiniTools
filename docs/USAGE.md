@@ -1,6 +1,6 @@
-# MiniTools 核心工具使用指南
+# OpenMiniTools 核心工具使用指南
 
-本文档提供了 MiniTools 项目中一些核心工具的详细配置和使用方法。
+本文档提供了 OpenMiniTools 项目中一些核心工具的详细配置和使用方法。
 
 ---
 

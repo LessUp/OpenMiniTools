@@ -183,7 +183,7 @@ Write-Host "--- 手动配置步骤 (如果自动配置未尝试、失败或需�
 Write-Host "1. 确保您已复制上面显示的公钥内容 (从 'ssh-rsa' 开始到末尾)。"
 Write-Host "2. 登录到目标 Windows SSH 服务器。"
 Write-Host "3. 在服务器上，以管理员身份运行 'configure-win-server-for-ssh-key-auth.ps1' 脚本。"
-Write-Host "   (通常位于 'C:\Users\shuai\Nutstore\1\02-开发资料\MiniTools\EnableSHH\configure-win-server-for-ssh-key-auth.ps1')"
+Write-Host "   (通常位于 'C:\Users\shuai\Nutstore\1\02-开发资料\OpenMiniTools\EnableSHH\configure-win-server-for-ssh-key-auth.ps1')"
 Write-Host "   当脚本提示时:"
 Write-Host "   - 输入您希望以此密钥登录的 Windows 用户名 (例如 'YourUser' 或 'DOMAIN\YourUser')。"
 Write-Host "   - 粘贴您复制的公钥内容。"
