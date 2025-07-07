@@ -1,0 +1,45 @@
+# ==============================================================================
+# MiniTools 项目 .gitignore 文件
+# ==============================================================================
+
+# --- 项目特定文件 ---
+# 忽略由 Git-Proxy 脚本生成的进程 ID 文件
+.proxy-pid
+
+# --- 常见 IDE 和编辑器配置 ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- 操作系统生成的文件 ---
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+
+# --- 构建和依赖目录 ---
+/node_modules/
+/vendor/
+/dist/
+/build/
+
+# --- 日志和数据库文件 ---
+*.log
+*.sql
+*.sqlite

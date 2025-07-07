@@ -1,0 +1,20 @@
+# SSH 主机配置文件示例
+# 格式: 别名,user@hostname [-p 端口] [其他 SSH 选项]
+#
+# - 别名是你在菜单中看到的名称。
+# - 连接字符串是传递给 ssh 命令的完整参数。
+# - 以 # 开头的行是注释，空行将被忽略。
+
+# --- 示例 ---
+
+# 简单的连接
+Web服务器,ubuntu@192.168.1.100
+
+# 指定不同的端口
+数据库,admin@db.example.com,-p 2222
+
+# 使用密钥文件
+测试机,dev@10.0.0.5,-i ~/.ssh/id_rsa_test
+
+# 包含更复杂的选项
+堡垒机,ops@jump.example.com,-A -J user@proxy.host

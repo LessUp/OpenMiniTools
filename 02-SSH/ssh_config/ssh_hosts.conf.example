@@ -1,0 +1,8 @@
+# SSH Hosts Configuration for ssh_menu.sh
+# Format: NICKNAME,USER@HOSTNAME
+# Lines starting with # are comments. Empty lines are ignored.
+
+# Examples:
+MyWebServer,ubuntu@192.168.1.100
+DatabaseServer,admin@db.example.com
+TestMachine,dev@10.0.0.5

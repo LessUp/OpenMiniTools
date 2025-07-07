@@ -1,0 +1,61 @@
+# ==============================================================================
+#
+#   文件: ssh_config.template
+#   描述: SSH 配置文件模板，用于通过跳板机安全访问私有 Git 服务器。
+#   作者: Your Name
+#   版本: 1.1
+#   更新日期: 2024-07-01
+#
+# ==============================================================================
+
+# [1. 全局默认设置]
+# 这些设置将应用于所有的 SSH 连接，提供一个良好的基础。
+Host *
+  # 优先使用更安全的公钥认证方式
+  PreferredAuthentications publickey
+  # 自动将私钥添加到 ssh-agent，避免重复输入密码
+  AddKeysToAgent          yes
+  # 客户端每 60 秒向服务器发送一次心跳，以保持连接活动状态
+  ServerAliveInterval     60
+  # 如果 3 次心跳未收到响应，则断开连接
+  ServerAliveCountMax     3
+  # 指定默认使用的私钥文件
+  IdentityFile            ~/.ssh/id_rsa
+
+# ==============================================================================
+# [2. 跳板机 (堡垒机) 配置]
+# 这是您访问内部网络的入口。请将占位符替换为您的真实服务器信息。
+Host your-jump-host
+  # 重要: 替换为您的跳板机 IP 地址或主机名
+  HostName your-jump-host.example.com
+  # 重要: 替换为您在跳板机上的用户名
+  User your-username
+  # (可选) 如果您为此主机使用一个特定的、非默认的私钥，请在此处取消注释并指定路径
+  # IdentityFile ~/.ssh/jump_host_key
+
+# ==============================================================================
+# [3. SOCKS 代理专用别名]
+# 这是一个特殊的别名，启动脚本将使用它来创建 SOCKS 代理隧道。
+Host gitlab-proxy
+  # 代理的目标主机应与您的跳板机保持一致
+  HostName your-jump-host.example.com
+  User your-username
+  # 核心指令: 在本地 1080 端口创建一个动态 SOCKS5 代理
+  DynamicForward 1080
+  # 后台代理连接不需要分配伪终端 (TTY)
+  RequestTTY no
+  # 如果端口转发失败（例如端口被占用），则立即退出 SSH 连接，防止脚本假成功
+  ExitOnForwardFailure yes
+
+# ==============================================================================
+# [4. (可选) Git over SSH 协议支持]
+# 如果您需要使用 `git clone git@...` 风格的 SSH 地址，请配置此节。
+# 它会告诉 SSH 在连接您的私有 Git 服务器时，自动通过跳板机进行跳转。
+#
+# 重要: 将 `your-git-server.com` 替换为您的私有 Git 服务器域名。
+Host your-git-server.com
+  HostName your-git-server.com
+  # Git 协议的用户通常是 `git`
+  User git
+  # 核心指令: 通过名为 `your-jump-host` 的配置进行代理跳转
+  ProxyJump your-jump-host
