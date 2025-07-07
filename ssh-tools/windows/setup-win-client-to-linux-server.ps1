@@ -135,9 +135,10 @@ try {
     # 最好是让用户测试。
     Write-Host ""
     Write-Host "公钥复制尝试已执行。" -ForegroundColor Green
+    Write-Host "请确保服务器上的SSHD配置已启用公钥认证"
     Write-Host "请尝试通过 SSH 免密登录到 Linux 服务器：" -ForegroundColor Green
     Write-Host "ssh $LinuxUser@$LinuxHost" -ForegroundColor Magenta
-    Write-Host "如果仍然提示输入密码，请仔细检查手动操作步骤或服务器上的 SSHD 配置 (通常是 /etc/ssh/sshd_config，确保 PubkeyAuthentication yes)。" -ForegroundColor Yellow
+    Write-Host "如果仍然提示输入密码，请仔细检查手动操作步骤或服务器上的 SSHD 配置。" -ForegroundColor Yellow
 
 }
 catch {
